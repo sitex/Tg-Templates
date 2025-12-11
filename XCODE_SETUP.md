@@ -102,6 +102,88 @@ After creating the project:
 - Make sure you're signed in with an Apple Developer account
 - App Groups require a valid team
 
+## Phase 7: Widget Extension Setup
+
+Follow these additional steps to set up the iOS Widget extension.
+
+### Step 1: Create Widget Extension Target
+
+1. In Xcode: File → New → Target
+2. Select **iOS** → **Widget Extension**
+3. Configure:
+   - **Product Name**: `TgTemplatesWidget`
+   - **Team**: Same as main app
+   - **Bundle Identifier**: `com.sitex.TgTemplates.TgTemplatesWidget` (auto-filled)
+   - **Include Configuration App Intent**: Yes (checked)
+4. Click "Finish"
+5. When asked to activate the scheme, click "Activate"
+
+### Step 2: Delete Default Files
+
+Xcode creates default widget files. Delete them:
+- `TgTemplatesWidgetBundle.swift` (delete)
+- `TgTemplatesWidgetLiveActivity.swift` (delete)
+- `AppIntent.swift` (delete)
+- `TgTemplatesWidget.swift` (delete - we have our own)
+
+### Step 3: Add Existing Widget Files
+
+1. Right-click the `TgTemplatesWidget` folder in Project Navigator
+2. Select "Add Files to TgTemplatesWidget..."
+3. Navigate to `TgTemplatesWidget/` in the repo
+4. Add these files:
+   - `WidgetTemplate.swift`
+   - `SendTemplateIntent.swift`
+   - `TgTemplatesWidget.swift`
+5. Make sure "Copy items if needed" is **unchecked**
+6. Ensure files are added to `TgTemplatesWidget` target only
+
+### Step 4: Configure Widget App Group
+
+1. Select the project in Navigator
+2. Select `TgTemplatesWidget` target
+3. Go to "Signing & Capabilities" tab
+4. Click "+ Capability"
+5. Add "App Groups"
+6. Enable the existing group: `group.com.sitex.TgTemplates`
+   (Must match the main app's App Group)
+
+### Step 5: Verify Target Membership
+
+Make sure WidgetTemplate.swift is included in **both** targets:
+
+1. Select `TgTemplatesWidget/WidgetTemplate.swift`
+2. Open File Inspector (right panel)
+3. Under "Target Membership", check both:
+   - [ ] TgTemplates
+   - [x] TgTemplatesWidget
+
+Note: The main app already has its own WidgetTemplate reference via the UserDefaults extension, so you only need it in the widget target.
+
+### Step 6: Build Widget Extension
+
+1. Select `TgTemplatesWidget` scheme in the scheme selector
+2. Press Cmd+B to build
+3. Fix any errors (usually missing imports or target membership)
+
+### Step 7: Test Widget
+
+1. Select `TgTemplates` scheme (main app)
+2. Run on simulator
+3. Long-press home screen → "Edit Home Screen"
+4. Tap "+" to add widget
+5. Search for "TgTemplates"
+6. Add small or medium widget
+
+### Widget Verification Checklist
+
+- [ ] Widget extension builds without errors
+- [ ] Widget appears in widget gallery
+- [ ] Widget shows template buttons (if templates exist)
+- [ ] Tapping widget button opens main app
+- [ ] Message sends after app opens from widget tap
+- [ ] Widget updates when templates change in main app
+
 ## Next Steps
 
 After completing Phase 1 setup, proceed to Phase 2 (Telegram Authentication) in the implementation plan:

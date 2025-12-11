@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct TemplateListView: View {
     @Environment(\.modelContext) private var modelContext
@@ -57,7 +58,30 @@ struct TemplateListView: View {
             .sheet(item: $templateToEdit) { template in
                 TemplateEditView(template: template)
             }
+            .onAppear {
+                syncWidgetData()
+            }
+            .onChange(of: templates.count) {
+                syncWidgetData()
+            }
         }
+    }
+
+    private func syncWidgetData() {
+        let widgetTemplates = templates.map { template in
+            WidgetTemplate(
+                id: template.id,
+                name: template.name,
+                icon: template.icon,
+                messageText: template.messageText,
+                targetGroupId: template.targetGroupId,
+                targetGroupName: template.targetGroupName,
+                includeLocation: template.includeLocation
+            )
+        }
+        UserDefaults.appGroup.widgetTemplates = widgetTemplates
+
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 

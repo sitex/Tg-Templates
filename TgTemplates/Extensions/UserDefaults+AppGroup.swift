@@ -5,7 +5,7 @@ extension UserDefaults {
 
     private enum Keys {
         static let cachedGroups = "cachedGroups"
-        static let cachedTemplates = "cachedTemplatesForWidget"
+        static let widgetTemplates = "widgetTemplates"
     }
 
     var cachedGroups: [TelegramGroup] {
@@ -19,6 +19,20 @@ extension UserDefaults {
         set {
             let data = try? JSONEncoder().encode(newValue)
             set(data, forKey: Keys.cachedGroups)
+        }
+    }
+
+    var widgetTemplates: [WidgetTemplate] {
+        get {
+            guard let data = data(forKey: Keys.widgetTemplates),
+                  let templates = try? JSONDecoder().decode([WidgetTemplate].self, from: data) else {
+                return []
+            }
+            return templates
+        }
+        set {
+            let data = try? JSONEncoder().encode(newValue)
+            set(data, forKey: Keys.widgetTemplates)
         }
     }
 }
