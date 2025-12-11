@@ -2,7 +2,8 @@
 .claude/settings.local.json
 
 # Xcode
-*.xcodeproj/project.xcworkspace/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcodeproj/xcuserdata/
 *.xcworkspace/xcuserdata/
 DerivedData/

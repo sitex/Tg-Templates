@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001000000000000001 /* TgTemplatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000001000000000000000 /* TgTemplatesApp.swift */; };
+		A1000002000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000000 /* ContentView.swift */; };
+		A1000003000000000000001 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000003000000000000000 /* Template.swift */; };
+		A1000004000000000000001 /* TelegramGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004000000000000000 /* TelegramGroup.swift */; };
+		A1000005000000000000001 /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000005000000000000000 /* TelegramService.swift */; };
+		A1000006000000000000001 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000006000000000000000 /* LocationService.swift */; };
+		A1000007000000000000001 /* TelegramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000007000000000000000 /* TelegramConfig.swift */; };
+		A1000008000000000000001 /* UserDefaults+AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008000000000000000 /* UserDefaults+AppGroup.swift */; };
+		A1000009000000000000001 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000009000000000000000 /* AuthView.swift */; };
+		A100000A000000000000001 /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A000000000000000 /* PhoneInputView.swift */; };
+		A100000B000000000000001 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B000000000000000 /* CodeInputView.swift */; };
+		A100000C000000000000001 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C000000000000000 /* PasswordInputView.swift */; };
+		A100000D000000000000001 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D000000000000000 /* ErrorView.swift */; };
+		A100000E000000000000001 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E000000000000000 /* TemplateListView.swift */; };
+		A100000F000000000000001 /* TemplateEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F000000000000000 /* TemplateEditView.swift */; };
+		A1000010000000000000001 /* TemplateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000010000000000000000 /* TemplateButtonView.swift */; };
+		A1000011000000000000001 /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000011000000000000000 /* IconPickerView.swift */; };
+		A1000012000000000000001 /* GroupPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000012000000000000000 /* GroupPickerView.swift */; };
+		A1000013000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000013000000000000000 /* SettingsView.swift */; };
+		A1000014000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000014000000000000000 /* Assets.xcassets */; };
+		A2000001000000000000001 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000 /* WidgetKit.framework */; };
+		A2000002000000000000001 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000002000000000000000 /* SwiftUI.framework */; };
+		A2000003000000000000001 /* TgTemplatesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003000000000000000 /* TgTemplatesWidget.swift */; };
+		A2000004000000000000001 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004000000000000000 /* WidgetTemplate.swift */; };
+		A2000005000000000000001 /* SendTemplateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005000000000000000 /* SendTemplateIntent.swift */; };
+		A2000006000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000006000000000000000 /* Assets.xcassets */; };
+		A2000007000000000000001 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3000001000000000000001 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3000001000000000000000 /* TDLibKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2000008000000000000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A200000F000000000000000;
+			remoteInfo = TgTemplatesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A200000A000000000000000 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2000007000000000000001 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1000001000000000000000 /* TgTemplatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesApp.swift; sourceTree = "<group>"; };
+		A1000002000000000000000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1000003000000000000000 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		A1000004000000000000000 /* TelegramGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramGroup.swift; sourceTree = "<group>"; };
+		A1000005000000000000000 /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
+		A1000006000000000000000 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A1000007000000000000000 /* TelegramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramConfig.swift; sourceTree = "<group>"; };
+		A1000008000000000000000 /* UserDefaults+AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppGroup.swift"; sourceTree = "<group>"; };
+		A1000009000000000000000 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A100000A000000000000000 /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
+		A100000B000000000000000 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
+		A100000C000000000000000 /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
+		A100000D000000000000000 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A100000E000000000000000 /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
+		A100000F000000000000000 /* TemplateEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEditView.swift; sourceTree = "<group>"; };
+		A1000010000000000000000 /* TemplateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButtonView.swift; sourceTree = "<group>"; };
+		A1000011000000000000000 /* IconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerView.swift; sourceTree = "<group>"; };
+		A1000012000000000000000 /* GroupPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPickerView.swift; sourceTree = "<group>"; };
+		A1000013000000000000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1000014000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000015000000000000000 /* TgTemplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TgTemplates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000016000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000017000000000000000 /* TgTemplates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplates.entitlements; sourceTree = "<group>"; };
+		A2000001000000000000000 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A2000002000000000000000 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A2000003000000000000000 /* TgTemplatesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesWidget.swift; sourceTree = "<group>"; };
+		A2000004000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
+		A2000005000000000000000 /* SendTemplateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTemplateIntent.swift; sourceTree = "<group>"; };
+		A2000006000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TgTemplatesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000011000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000012000000000000000 /* TgTemplatesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplatesWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000020000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3000001000000000000001 /* TDLibKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200000B000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2000002000000000000001 /* SwiftUI.framework in Frameworks */,
+				A2000001000000000000001 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0000001000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				A1000030000000000000000 /* TgTemplates */,
+				A2000020000000000000000 /* TgTemplatesWidget */,
+				A0000002000000000000000 /* Frameworks */,
+				A0000003000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0000002000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000000 /* WidgetKit.framework */,
+				A2000002000000000000000 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0000003000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000015000000000000000 /* TgTemplates.app */,
+				A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000030000000000000000 /* TgTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				A1000001000000000000000 /* TgTemplatesApp.swift */,
+				A1000031000000000000000 /* Config */,
+				A1000032000000000000000 /* Models */,
+				A1000033000000000000000 /* Services */,
+				A1000034000000000000000 /* Views */,
+				A1000035000000000000000 /* Extensions */,
+				A1000036000000000000000 /* Resources */,
+				A1000016000000000000000 /* Info.plist */,
+				A1000017000000000000000 /* TgTemplates.entitlements */,
+			);
+			path = TgTemplates;
+			sourceTree = "<group>";
+		};
+		A1000031000000000000000 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A1000007000000000000000 /* TelegramConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A1000032000000000000000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1000003000000000000000 /* Template.swift */,
+				A1000004000000000000000 /* TelegramGroup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000033000000000000000 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1000005000000000000000 /* TelegramService.swift */,
+				A1000006000000000000000 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1000034000000000000000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000000 /* ContentView.swift */,
+				A1000037000000000000000 /* Auth */,
+				A1000038000000000000000 /* Templates */,
+				A1000039000000000000000 /* Groups */,
+				A100003A000000000000000 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1000035000000000000000 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1000008000000000000000 /* UserDefaults+AppGroup.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1000036000000000000000 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1000014000000000000000 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1000037000000000000000 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A1000009000000000000000 /* AuthView.swift */,
+				A100000A000000000000000 /* PhoneInputView.swift */,
+				A100000B000000000000000 /* CodeInputView.swift */,
+				A100000C000000000000000 /* PasswordInputView.swift */,
+				A100000D000000000000000 /* ErrorView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A1000038000000000000000 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				A100000E000000000000000 /* TemplateListView.swift */,
+				A100000F000000000000000 /* TemplateEditView.swift */,
+				A1000010000000000000000 /* TemplateButtonView.swift */,
+				A1000011000000000000000 /* IconPickerView.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		A1000039000000000000000 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				A1000012000000000000000 /* GroupPickerView.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		A100003A000000000000000 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A1000013000000000000000 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A2000020000000000000000 /* TgTemplatesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A2000003000000000000000 /* TgTemplatesWidget.swift */,
+				A2000004000000000000000 /* WidgetTemplate.swift */,
+				A2000005000000000000000 /* SendTemplateIntent.swift */,
+				A2000006000000000000000 /* Assets.xcassets */,
+				A2000011000000000000000 /* Info.plist */,
+				A2000012000000000000000 /* TgTemplatesWidgetExtension.entitlements */,
+			);
+			path = TgTemplatesWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000040000000000000000 /* TgTemplates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000050000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplates" */;
+			buildPhases = (
+				A1000041000000000000000 /* Sources */,
+				A1000020000000000000000 /* Frameworks */,
+				A1000042000000000000000 /* Resources */,
+				A200000A000000000000000 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2000009000000000000000 /* PBXTargetDependency */,
+			);
+			name = TgTemplates;
+			packageProductDependencies = (
+				A3000001000000000000000 /* TDLibKit */,
+			);
+			productName = TgTemplates;
+			productReference = A1000015000000000000000 /* TgTemplates.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A200000F000000000000000 /* TgTemplatesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2000030000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWidgetExtension" */;
+			buildPhases = (
+				A200000C000000000000000 /* Sources */,
+				A200000B000000000000000 /* Frameworks */,
+				A200000D000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TgTemplatesWidgetExtension;
+			productName = TgTemplatesWidgetExtension;
+			productReference = A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000040000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A200000F000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A0000010000000000000000 /* Build configuration list for PBXProject "TgTemplates" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0000001000000000000000;
+			packageReferences = (
+				A3000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */,
+			);
+			productRefGroup = A0000003000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000040000000000000000 /* TgTemplates */,
+				A200000F000000000000000 /* TgTemplatesWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000042000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000014000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200000D000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2000006000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000041000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000001 /* TgTemplatesApp.swift in Sources */,
+				A1000002000000000000001 /* ContentView.swift in Sources */,
+				A1000003000000000000001 /* Template.swift in Sources */,
+				A1000004000000000000001 /* TelegramGroup.swift in Sources */,
+				A1000005000000000000001 /* TelegramService.swift in Sources */,
+				A1000006000000000000001 /* LocationService.swift in Sources */,
+				A1000007000000000000001 /* TelegramConfig.swift in Sources */,
+				A1000008000000000000001 /* UserDefaults+AppGroup.swift in Sources */,
+				A1000009000000000000001 /* AuthView.swift in Sources */,
+				A100000A000000000000001 /* PhoneInputView.swift in Sources */,
+				A100000B000000000000001 /* CodeInputView.swift in Sources */,
+				A100000C000000000000001 /* PasswordInputView.swift in Sources */,
+				A100000D000000000000001 /* ErrorView.swift in Sources */,
+				A100000E000000000000001 /* TemplateListView.swift in Sources */,
+				A100000F000000000000001 /* TemplateEditView.swift in Sources */,
+				A1000010000000000000001 /* TemplateButtonView.swift in Sources */,
+				A1000011000000000000001 /* IconPickerView.swift in Sources */,
+				A1000012000000000000001 /* GroupPickerView.swift in Sources */,
+				A1000013000000000000001 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200000C000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2000003000000000000001 /* TgTemplatesWidget.swift in Sources */,
+				A2000004000000000000001 /* WidgetTemplate.swift in Sources */,
+				A2000005000000000000001 /* SendTemplateIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2000009000000000000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A200000F000000000000000 /* TgTemplatesWidgetExtension */;
+			targetProxy = A2000008000000000000000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0000011000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0000012000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1000051000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TgTemplates/TgTemplates.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TgTemplates/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tg Templates";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To attach your location to template messages";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitex.TgTemplates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1000052000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TgTemplates/TgTemplates.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TgTemplates/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tg Templates";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To attach your location to template messages";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitex.TgTemplates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2000031000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TgTemplatesWidget/TgTemplatesWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TgTemplatesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TgTemplatesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitex.TgTemplates.TgTemplatesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2000032000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TgTemplatesWidget/TgTemplatesWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TgTemplatesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TgTemplatesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitex.TgTemplates.TgTemplatesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0000010000000000000000 /* Build configuration list for PBXProject "TgTemplates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000011000000000000000 /* Debug */,
+				A0000012000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000050000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000051000000000000000 /* Debug */,
+				A1000052000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2000030000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2000031000000000000000 /* Debug */,
+				A2000032000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftgram/TDLibKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductReference section */
+		A3000001000000000000000 /* TDLibKit */ = {
+			isa = XCSwiftPackageProductReference;
+			package = A3000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			productName = TDLibKit;
+		};
+/* End XCSwiftPackageProductReference section */
+	};
+	rootObject = A0000000000000000000000 /* Project object */;
+}
