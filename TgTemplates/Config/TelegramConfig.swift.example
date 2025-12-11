@@ -1,0 +1,16 @@
+import Foundation
+
+// IMPORTANT: Copy this file to TelegramConfig.swift and add your credentials
+// Get your API credentials from https://my.telegram.org
+//
+// Steps:
+// 1. Go to https://my.telegram.org
+// 2. Log in with your phone number
+// 3. Click "API development tools"
+// 4. Create a new application
+// 5. Copy api_id and api_hash below
+
+enum TelegramConfig {
+    static let apiId: Int32 = 0        // Replace with your API ID (integer)
+    static let apiHash = ""            // Replace with your API Hash (string)
+}
