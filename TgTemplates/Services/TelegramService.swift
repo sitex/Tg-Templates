@@ -186,4 +186,60 @@ class TelegramService: ObservableObject {
         groups = fetchedGroups
         UserDefaults.appGroup.cachedGroups = fetchedGroups
     }
+
+    // MARK: - Messages
+
+    func sendTemplateMessage(_ template: Template) async throws {
+        guard let client = client,
+              let groupId = template.targetGroupId else {
+            throw TelegramError.noGroupSelected
+        }
+
+        var messageText = template.messageText
+
+        // Add location if enabled
+        if template.includeLocation {
+            do {
+                let location = try await LocationService.shared.getCurrentLocation()
+                let lat = location.coordinate.latitude
+                let lon = location.coordinate.longitude
+                let mapsUrl = "https://maps.google.com/?q=\(lat),\(lon)"
+                messageText += "\n\n📍 \(mapsUrl)"
+            } catch {
+                print("Location error: \(error)")
+                // Continue without location
+            }
+        }
+
+        let inputContent = InputMessageContent.inputMessageText(
+            InputMessageText(
+                clearDraft: true,
+                linkPreviewOptions: nil,
+                text: FormattedText(entities: [], text: messageText)
+            )
+        )
+
+        _ = try await client.sendMessage(
+            chatId: groupId,
+            inputMessageContent: inputContent,
+            messageThreadId: 0,
+            options: nil,
+            replyMarkup: nil,
+            replyTo: nil
+        )
+    }
+}
+
+enum TelegramError: LocalizedError {
+    case noGroupSelected
+    case notAuthenticated
+
+    var errorDescription: String? {
+        switch self {
+        case .noGroupSelected:
+            return "No target group selected"
+        case .notAuthenticated:
+            return "Not authenticated with Telegram"
+        }
+    }
 }
