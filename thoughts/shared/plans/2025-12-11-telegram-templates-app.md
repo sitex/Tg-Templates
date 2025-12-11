@@ -52,6 +52,10 @@ Use modern Swift stack:
 - **WidgetKit** with App Groups for home screen widgets
 - **CoreLocation** for geolocation
 
+## Workflow
+
+- **Git push after each phase** - Commit and push changes to `origin/main` after completing each phase
+
 ---
 
 ## Phase 1: Project Setup
