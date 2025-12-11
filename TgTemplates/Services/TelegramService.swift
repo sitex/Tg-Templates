@@ -10,6 +10,7 @@ class TelegramService: ObservableObject {
 
     @Published var authState: AuthState = .loading
     @Published var isReady = false
+    @Published var groups: [TelegramGroup] = []
 
     enum AuthState: Equatable {
         case loading
@@ -137,5 +138,52 @@ class TelegramService: ObservableObject {
 
     func logout() async throws {
         _ = try await client?.logOut()
+    }
+
+    // MARK: - Groups
+
+    func fetchGroups() async throws {
+        guard let client = client else { return }
+
+        // Get chat list
+        let chats = try await client.getChats(
+            chatList: .chatListMain,
+            limit: 100
+        )
+
+        var fetchedGroups: [TelegramGroup] = []
+
+        for chatId in chats.chatIds {
+            if let chat = try? await client.getChat(chatId: chatId) {
+                // Only include groups and supergroups
+                switch chat.type {
+                case .chatTypeBasicGroup(let info):
+                    let fullInfo = try? await client.getBasicGroupFullInfo(
+                        basicGroupId: info.basicGroupId
+                    )
+                    fetchedGroups.append(TelegramGroup(
+                        id: chatId,
+                        title: chat.title,
+                        memberCount: fullInfo?.members.count ?? 0
+                    ))
+                case .chatTypeSupergroup(let info):
+                    if !info.isChannel {
+                        let fullInfo = try? await client.getSupergroupFullInfo(
+                            supergroupId: info.supergroupId
+                        )
+                        fetchedGroups.append(TelegramGroup(
+                            id: chatId,
+                            title: chat.title,
+                            memberCount: fullInfo?.memberCount ?? 0
+                        ))
+                    }
+                default:
+                    break
+                }
+            }
+        }
+
+        groups = fetchedGroups
+        UserDefaults.appGroup.cachedGroups = fetchedGroups
     }
 }
