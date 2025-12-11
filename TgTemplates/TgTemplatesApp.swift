@@ -3,10 +3,20 @@ import SwiftData
 
 @main
 struct TgTemplatesApp: App {
+    @StateObject private var telegram = TelegramService.shared
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if telegram.isReady {
+                ContentView()
+            } else {
+                AuthView()
+            }
         }
         .modelContainer(for: [Template.self])
+    }
+
+    init() {
+        TelegramService.shared.start()
     }
 }
