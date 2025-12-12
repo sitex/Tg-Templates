@@ -3,7 +3,7 @@ import Foundation
 
 struct WatchSendTemplateIntent: AppIntent {
     static var title: LocalizedStringResource = "Send Template from Watch"
-    static var description = IntentDescription("Sends a template message to Telegram via iPhone")
+    static var description = IntentDescription("Sends a template message to Telegram")
 
     @Parameter(title: "Template ID")
     var templateId: String
