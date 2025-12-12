@@ -228,6 +228,46 @@ class TelegramService: ObservableObject {
             topicId: nil
         )
     }
+
+    func sendTemplateMessage(_ template: WidgetTemplate) async throws {
+        guard let client = client,
+              let groupId = template.targetGroupId else {
+            throw TelegramError.noGroupSelected
+        }
+
+        var messageText = template.messageText
+
+        // Add location if enabled
+        if template.includeLocation {
+            do {
+                let location = try await LocationService.shared.getCurrentLocation()
+                let lat = location.coordinate.latitude
+                let lon = location.coordinate.longitude
+                let mapsUrl = "https://maps.google.com/?q=\(lat),\(lon)"
+                messageText += "\n\n📍 \(mapsUrl)"
+            } catch {
+                print("Location error: \(error)")
+                // Continue without location
+            }
+        }
+
+        let inputContent = InputMessageContent.inputMessageText(
+            InputMessageText(
+                clearDraft: true,
+                linkPreviewOptions: nil,
+                text: FormattedText(entities: [], text: messageText)
+            )
+        )
+
+        _ = try await client.sendMessage(
+            chatId: groupId,
+            inputMessageContent: inputContent,
+            options: nil,
+            replyMarkup: nil,
+            replyTo: nil,
+            topicId: nil
+        )
+    }
 }
 
 enum TelegramError: LocalizedError {

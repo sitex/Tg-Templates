@@ -1,8 +1,9 @@
 import SwiftUI
-import AppIntents
 
 struct TemplateDetailView: View {
     let template: WidgetTemplate
+    @ObservedObject private var connectivity = WatchConnectivityManager.shared
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         ScrollView {
@@ -58,17 +59,44 @@ struct TemplateDetailView: View {
                 Spacer()
 
                 // Send button
-                Button(intent: WatchSendTemplateIntent(templateId: template.id)) {
-                    Label("Send", systemImage: "paperplane.fill")
-                        .frame(maxWidth: .infinity)
+                Button {
+                    connectivity.sendTemplate(id: template.id)
+                } label: {
+                    switch connectivity.sendStatus {
+                    case .idle:
+                        Label("Send", systemImage: "paperplane.fill")
+                            .frame(maxWidth: .infinity)
+                    case .sending:
+                        ProgressView()
+                            .frame(maxWidth: .infinity)
+                    case .success:
+                        Label("Sent!", systemImage: "checkmark.circle.fill")
+                            .frame(maxWidth: .infinity)
+                    case .error:
+                        Label("Failed", systemImage: "xmark.circle.fill")
+                            .frame(maxWidth: .infinity)
+                    }
                 }
                 .buttonStyle(.borderedProminent)
+                .tint(buttonTint)
+                .disabled(connectivity.sendStatus == .sending)
                 .padding(.horizontal)
                 .padding(.bottom)
             }
         }
         .navigationTitle("Details")
         .navigationBarTitleDisplayMode(.inline)
+        .onDisappear {
+            connectivity.sendStatus = .idle
+        }
+    }
+
+    private var buttonTint: Color {
+        switch connectivity.sendStatus {
+        case .success: return .green
+        case .error: return .red
+        default: return .accentColor
+        }
     }
 }
 

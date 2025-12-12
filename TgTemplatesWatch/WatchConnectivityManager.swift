@@ -6,6 +6,14 @@ class WatchConnectivityManager: NSObject, ObservableObject {
     static let shared = WatchConnectivityManager()
 
     @Published var templates: [WidgetTemplate] = []
+    @Published var sendStatus: SendStatus = .idle
+
+    enum SendStatus: Equatable {
+        case idle
+        case sending
+        case success
+        case error(String)
+    }
 
     private var session: WCSession?
 
@@ -20,6 +28,34 @@ class WatchConnectivityManager: NSObject, ObservableObject {
 
         // Load cached templates from UserDefaults
         templates = UserDefaults.watchGroup.widgetTemplates
+    }
+
+    func sendTemplate(id: UUID) {
+        guard let session = session, session.isReachable else {
+            sendStatus = .error("iPhone not reachable")
+            return
+        }
+
+        sendStatus = .sending
+
+        let message: [String: Any] = [
+            "action": "sendTemplate",
+            "templateId": id.uuidString
+        ]
+
+        session.sendMessage(message, replyHandler: { [weak self] reply in
+            Task { @MainActor in
+                if let success = reply["success"] as? Bool, success {
+                    self?.sendStatus = .success
+                } else if let error = reply["error"] as? String {
+                    self?.sendStatus = .error(error)
+                }
+            }
+        }, errorHandler: { [weak self] error in
+            Task { @MainActor in
+                self?.sendStatus = .error(error.localizedDescription)
+            }
+        })
     }
 
     nonisolated private func processReceivedData(_ data: Data) {

@@ -42,6 +42,30 @@ class WatchConnectivityManager: NSObject, ObservableObject {
             print("WatchConnectivity encode error: \(error)")
         }
     }
+
+    nonisolated private func handleSendTemplate(templateId: String, replyHandler: @escaping ([String: Any]) -> Void) {
+        guard let uuid = UUID(uuidString: templateId) else {
+            replyHandler(["success": false, "error": "Invalid template ID"])
+            return
+        }
+
+        Task { @MainActor in
+            // Find the template in UserDefaults
+            let templates = UserDefaults.appGroup.widgetTemplates
+            guard let template = templates.first(where: { $0.id == uuid }) else {
+                replyHandler(["success": false, "error": "Template not found"])
+                return
+            }
+
+            // Send via Telegram
+            do {
+                try await TelegramService.shared.sendTemplateMessage(template)
+                replyHandler(["success": true])
+            } catch {
+                replyHandler(["success": false, "error": error.localizedDescription])
+            }
+        }
+    }
 }
 
 extension WatchConnectivityManager: WCSessionDelegate {
@@ -61,6 +85,25 @@ extension WatchConnectivityManager: WCSessionDelegate {
     nonisolated func sessionReachabilityDidChange(_ session: WCSession) {
         Task { @MainActor in
             self.isReachable = session.isReachable
+        }
+    }
+
+    // Handle messages from Watch
+    nonisolated func session(_ session: WCSession, didReceiveMessage message: [String: Any], replyHandler: @escaping ([String: Any]) -> Void) {
+        guard let action = message["action"] as? String else {
+            replyHandler(["success": false, "error": "Unknown action"])
+            return
+        }
+
+        switch action {
+        case "sendTemplate":
+            if let templateId = message["templateId"] as? String {
+                handleSendTemplate(templateId: templateId, replyHandler: replyHandler)
+            } else {
+                replyHandler(["success": false, "error": "Missing template ID"])
+            }
+        default:
+            replyHandler(["success": false, "error": "Unknown action"])
         }
     }
 }
