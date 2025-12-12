@@ -42,6 +42,10 @@
 		A30000040000000000000010 /* TgTemplatesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A30000100000000000000000 /* TgTemplatesWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A30000400000000000000010 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000400000000000000000 /* WidgetTemplate.swift */; };
 		A30000410000000000000010 /* UserDefaults+Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000410000000000000000 /* UserDefaults+Watch.swift */; };
+		A30000420000000000000010 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000420000000000000000 /* TemplateListView.swift */; };
+		A30000430000000000000010 /* TemplateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000430000000000000000 /* TemplateRowView.swift */; };
+		A30000440000000000000010 /* TemplateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000440000000000000000 /* TemplateDetailView.swift */; };
+		A30000450000000000000010 /* WatchSendTemplateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000450000000000000000 /* WatchSendTemplateIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,10 @@
 		A30000100000000000000000 /* TgTemplatesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TgTemplatesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30000400000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
 		A30000410000000000000000 /* UserDefaults+Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Watch.swift"; sourceTree = "<group>"; };
+		A30000420000000000000000 /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
+		A30000430000000000000000 /* TemplateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateRowView.swift; sourceTree = "<group>"; };
+		A30000440000000000000000 /* TemplateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDetailView.swift; sourceTree = "<group>"; };
+		A30000450000000000000000 /* WatchSendTemplateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSendTemplateIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,8 +323,12 @@
 			children = (
 				A30000010000000000000000 /* TgTemplatesWatchApp.swift */,
 				A30000020000000000000000 /* ContentView.swift */,
+				A30000420000000000000000 /* TemplateListView.swift */,
+				A30000430000000000000000 /* TemplateRowView.swift */,
+				A30000440000000000000000 /* TemplateDetailView.swift */,
 				A30000400000000000000000 /* WidgetTemplate.swift */,
 				A30000410000000000000000 /* UserDefaults+Watch.swift */,
+				A30000450000000000000000 /* WatchSendTemplateIntent.swift */,
 				A30000030000000000000000 /* Assets.xcassets */,
 				A30000070000000000000000 /* TgTemplatesWatch.entitlements */,
 			);
@@ -496,8 +508,12 @@
 			files = (
 				A30000010000000000000010 /* TgTemplatesWatchApp.swift in Sources */,
 				A30000020000000000000010 /* ContentView.swift in Sources */,
+				A30000420000000000000010 /* TemplateListView.swift in Sources */,
+				A30000430000000000000010 /* TemplateRowView.swift in Sources */,
+				A30000440000000000000010 /* TemplateDetailView.swift in Sources */,
 				A30000400000000000000010 /* WidgetTemplate.swift in Sources */,
 				A30000410000000000000010 /* UserDefaults+Watch.swift in Sources */,
+				A30000450000000000000010 /* WatchSendTemplateIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
