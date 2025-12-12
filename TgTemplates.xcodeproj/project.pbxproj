@@ -14,7 +14,6 @@
 		A10000040000000000000010 /* TelegramGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000040000000000000000 /* TelegramGroup.swift */; };
 		A10000050000000000000010 /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000050000000000000000 /* TelegramService.swift */; };
 		A10000060000000000000010 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000060000000000000000 /* LocationService.swift */; };
-		A100001B0000000000000010 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001B0000000000000000 /* WatchConnectivityManager.swift */; };
 		A10000070000000000000010 /* TelegramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000070000000000000000 /* TelegramConfig.swift */; };
 		A10000080000000000000010 /* UserDefaults+AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000080000000000000000 /* UserDefaults+AppGroup.swift */; };
 		A10000090000000000000010 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000090000000000000000 /* AuthView.swift */; };
@@ -22,7 +21,6 @@
 		A100000B0000000000000010 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B0000000000000000 /* CodeInputView.swift */; };
 		A100000C0000000000000010 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C0000000000000000 /* PasswordInputView.swift */; };
 		A100000D0000000000000010 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D0000000000000000 /* ErrorView.swift */; };
-		A100001A0000000000000010 /* ApiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A0000000000000000 /* ApiConfigView.swift */; };
 		A100000E0000000000000010 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E0000000000000000 /* TemplateListView.swift */; };
 		A100000F0000000000000010 /* TemplateEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F0000000000000000 /* TemplateEditView.swift */; };
 		A10000100000000000000010 /* TemplateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000100000000000000000 /* TemplateButtonView.swift */; };
@@ -31,6 +29,8 @@
 		A10000130000000000000010 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000130000000000000000 /* SettingsView.swift */; };
 		A10000140000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000140000000000000000 /* Assets.xcassets */; };
 		A10000180000000000000010 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000180000000000000000 /* WidgetTemplate.swift */; };
+		A100001A0000000000000010 /* ApiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A0000000000000000 /* ApiConfigView.swift */; };
+		A100001B0000000000000010 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001B0000000000000000 /* WatchConnectivityManager.swift */; };
 		A20000010000000000000010 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000010000000000000000 /* WidgetKit.framework */; };
 		A20000020000000000000010 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000020000000000000000 /* SwiftUI.framework */; };
 		A20000030000000000000010 /* TgTemplatesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000000 /* TgTemplatesWidget.swift */; };
@@ -100,7 +100,6 @@
 		A10000040000000000000000 /* TelegramGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramGroup.swift; sourceTree = "<group>"; };
 		A10000050000000000000000 /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
 		A10000060000000000000000 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		A100001B0000000000000000 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
 		A10000070000000000000000 /* TelegramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramConfig.swift; sourceTree = "<group>"; };
 		A10000080000000000000000 /* UserDefaults+AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppGroup.swift"; sourceTree = "<group>"; };
 		A10000090000000000000000 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -108,7 +107,6 @@
 		A100000B0000000000000000 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		A100000C0000000000000000 /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
 		A100000D0000000000000000 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		A100001A0000000000000000 /* ApiConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfigView.swift; sourceTree = "<group>"; };
 		A100000E0000000000000000 /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
 		A100000F0000000000000000 /* TemplateEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEditView.swift; sourceTree = "<group>"; };
 		A10000100000000000000000 /* TemplateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButtonView.swift; sourceTree = "<group>"; };
@@ -120,6 +118,8 @@
 		A10000160000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10000170000000000000000 /* TgTemplates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplates.entitlements; sourceTree = "<group>"; };
 		A10000180000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
+		A100001A0000000000000000 /* ApiConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfigView.swift; sourceTree = "<group>"; };
+		A100001B0000000000000000 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
 		A20000010000000000000000 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A20000020000000000000000 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A20000030000000000000000 /* TgTemplatesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesWidget.swift; sourceTree = "<group>"; };
@@ -671,7 +671,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TgTemplates/TgTemplates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = RN7338LJV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -704,7 +704,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TgTemplates/TgTemplates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = RN7338LJV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -737,7 +737,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = TgTemplatesWidget/TgTemplatesWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = RN7338LJV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TgTemplatesWidget/Info.plist;
@@ -765,7 +765,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = TgTemplatesWidget/TgTemplatesWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = RN7338LJV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TgTemplatesWidget/Info.plist;
@@ -793,7 +793,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TgTemplatesWatch/TgTemplatesWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = RN7338LJV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -823,7 +823,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TgTemplatesWatch/TgTemplatesWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = RN7338LJV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
