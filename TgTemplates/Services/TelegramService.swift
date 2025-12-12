@@ -225,7 +225,7 @@ class TelegramService: ObservableObject {
             options: nil,
             replyMarkup: nil,
             replyTo: nil,
-            topicId: 0
+            topicId: nil
         )
     }
 }
