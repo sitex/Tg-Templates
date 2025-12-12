@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21B9E0182EEBDFE700B05255 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = 21B9E0172EEBDFE700B05255 /* TDLibKit */; };
 		A10000010000000000000010 /* TgTemplatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000010000000000000000 /* TgTemplatesApp.swift */; };
 		A10000020000000000000010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000000 /* ContentView.swift */; };
 		A10000030000000000000010 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000030000000000000000 /* Template.swift */; };
@@ -100,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B9E0182EEBDFE700B05255 /* TDLibKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +333,9 @@
 				Base,
 			);
 			mainGroup = A00000010000000000000000;
+			packageReferences = (
+				21B9E0162EEBDFE700B05255 /* XCRemoteSwiftPackageReference "TDLibKit" */,
+			);
 			productRefGroup = A00000030000000000000000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -681,6 +686,24 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		21B9E0162EEBDFE700B05255 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftgram/TDLibKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21B9E0172EEBDFE700B05255 /* TDLibKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B9E0162EEBDFE700B05255 /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			productName = TDLibKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A00000000000000000000000 /* Project object */;
 }
