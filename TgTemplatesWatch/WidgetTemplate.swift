@@ -1,6 +1,6 @@
 import Foundation
 
-struct WidgetTemplate: Codable, Identifiable {
+struct WidgetTemplate: Codable, Identifiable, Hashable {
     let id: UUID
     let name: String
     let icon: String

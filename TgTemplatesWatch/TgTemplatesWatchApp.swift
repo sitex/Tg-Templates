@@ -4,7 +4,7 @@ import SwiftUI
 struct TgTemplatesWatchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TemplateListView()
         }
     }
 }
