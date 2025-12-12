@@ -123,6 +123,9 @@ struct TemplateListView: View {
         }
         UserDefaults.appGroup.widgetTemplates = widgetTemplates
 
+        // Send to Watch via WatchConnectivity
+        WatchConnectivityManager.shared.sendTemplates(widgetTemplates)
+
         WidgetCenter.shared.reloadAllTimelines()
     }
 }

@@ -4,10 +4,16 @@ extension UserDefaults {
     static let watchGroup = UserDefaults(suiteName: "group.com.sitex.TgTemplates")!
 
     var widgetTemplates: [WidgetTemplate] {
-        guard let data = data(forKey: "widgetTemplates"),
-              let templates = try? JSONDecoder().decode([WidgetTemplate].self, from: data) else {
-            return []
+        get {
+            guard let data = data(forKey: "widgetTemplates"),
+                  let templates = try? JSONDecoder().decode([WidgetTemplate].self, from: data) else {
+                return []
+            }
+            return templates
         }
-        return templates
+        set {
+            let data = try? JSONEncoder().encode(newValue)
+            set(data, forKey: "widgetTemplates")
+        }
     }
 }

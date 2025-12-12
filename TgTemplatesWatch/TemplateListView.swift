@@ -1,21 +1,18 @@
 import SwiftUI
 
 struct TemplateListView: View {
-    @State private var templates: [WidgetTemplate] = []
+    @ObservedObject private var connectivity = WatchConnectivityManager.shared
 
     var body: some View {
         NavigationStack {
             Group {
-                if templates.isEmpty {
+                if connectivity.templates.isEmpty {
                     emptyStateView
                 } else {
                     templateList
                 }
             }
             .navigationTitle("Templates")
-        }
-        .onAppear {
-            loadTemplates()
         }
     }
 
@@ -35,7 +32,7 @@ struct TemplateListView: View {
     }
 
     private var templateList: some View {
-        List(templates) { template in
+        List(connectivity.templates) { template in
             NavigationLink(value: template) {
                 TemplateRowView(template: template)
             }
@@ -43,22 +40,6 @@ struct TemplateListView: View {
         .navigationDestination(for: WidgetTemplate.self) { template in
             TemplateDetailView(template: template)
         }
-        .refreshable {
-            loadTemplates()
-        }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    loadTemplates()
-                } label: {
-                    Image(systemName: "arrow.clockwise")
-                }
-            }
-        }
-    }
-
-    private func loadTemplates() {
-        templates = UserDefaults.watchGroup.widgetTemplates
     }
 }
 
