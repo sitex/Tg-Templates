@@ -40,6 +40,8 @@
 		A30000020000000000000010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000020000000000000000 /* ContentView.swift */; };
 		A30000030000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30000030000000000000000 /* Assets.xcassets */; };
 		A30000040000000000000010 /* TgTemplatesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A30000100000000000000000 /* TgTemplatesWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A30000400000000000000010 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000400000000000000000 /* WidgetTemplate.swift */; };
+		A30000410000000000000010 /* UserDefaults+Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000410000000000000000 /* UserDefaults+Watch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,8 @@
 		A30000030000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30000070000000000000000 /* TgTemplatesWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplatesWatch.entitlements; sourceTree = "<group>"; };
 		A30000100000000000000000 /* TgTemplatesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TgTemplatesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30000400000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
+		A30000410000000000000000 /* UserDefaults+Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Watch.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +315,8 @@
 			children = (
 				A30000010000000000000000 /* TgTemplatesWatchApp.swift */,
 				A30000020000000000000000 /* ContentView.swift */,
+				A30000400000000000000000 /* WidgetTemplate.swift */,
+				A30000410000000000000000 /* UserDefaults+Watch.swift */,
 				A30000030000000000000000 /* Assets.xcassets */,
 				A30000070000000000000000 /* TgTemplatesWatch.entitlements */,
 			);
@@ -490,6 +496,8 @@
 			files = (
 				A30000010000000000000010 /* TgTemplatesWatchApp.swift in Sources */,
 				A30000020000000000000010 /* ContentView.swift in Sources */,
+				A30000400000000000000010 /* WidgetTemplate.swift in Sources */,
+				A30000410000000000000010 /* UserDefaults+Watch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
