@@ -101,7 +101,7 @@ class TelegramService: ObservableObject {
             do {
                 try await client?.setTdlibParameters(
                     apiHash: TelegramConfig.apiHash,
-                    apiId: TelegramConfig.apiId,
+                    apiId: Int(TelegramConfig.apiId),
                     applicationVersion: "1.0",
                     databaseDirectory: documentsPath,
                     databaseEncryptionKey: Data(),
@@ -222,7 +222,6 @@ class TelegramService: ObservableObject {
         _ = try await client.sendMessage(
             chatId: groupId,
             inputMessageContent: inputContent,
-            messageThreadId: 0,
             options: nil,
             replyMarkup: nil,
             replyTo: nil
