@@ -34,7 +34,6 @@
 		A20000050000000000000010 /* SendTemplateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000050000000000000000 /* SendTemplateIntent.swift */; };
 		A20000060000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000060000000000000000 /* Assets.xcassets */; };
 		A20000070000000000000010 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A30000010000000000000010 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = A30000010000000000000000 /* TDLibKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30000010000000000000010 /* TDLibKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +283,6 @@
 				A20000090000000000000000 /* PBXTargetDependency */,
 			);
 			name = TgTemplates;
-			packageProductDependencies = (
-				A30000010000000000000000 /* TDLibKit */,
-			);
 			productName = TgTemplates;
 			productReference = A10000150000000000000000 /* TgTemplates.app */;
 			productType = "com.apple.product-type.application";
@@ -336,9 +331,6 @@
 				Base,
 			);
 			mainGroup = A00000010000000000000000;
-			packageReferences = (
-				A30000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */,
-			);
 			productRefGroup = A00000030000000000000000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -689,24 +681,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A30000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swiftgram/TDLibKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductReference section */
-		A30000010000000000000000 /* TDLibKit */ = {
-			isa = XCSwiftPackageProductReference;
-			package = A30000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */;
-			productName = TDLibKit;
-		};
-/* End XCSwiftPackageProductReference section */
 	};
 	rootObject = A00000000000000000000000 /* Project object */;
 }
