@@ -43,6 +43,18 @@ struct TemplateListView: View {
         .navigationDestination(for: WidgetTemplate.self) { template in
             TemplateDetailView(template: template)
         }
+        .refreshable {
+            loadTemplates()
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    loadTemplates()
+                } label: {
+                    Image(systemName: "arrow.clockwise")
+                }
+            }
+        }
     }
 
     private func loadTemplates() {
