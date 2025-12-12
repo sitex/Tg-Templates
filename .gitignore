@@ -2,7 +2,6 @@
 .claude/settings.local.json
 
 # Xcode
-*.xcodeproj/project.xcworkspace/xcshareddata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcodeproj/xcuserdata/
 *.xcworkspace/xcuserdata/
@@ -18,7 +17,6 @@ DerivedData/
 # Swift Package Manager
 .build/
 .swiftpm/
-Package.resolved
 
 # Secrets - IMPORTANT: Contains API credentials
 TgTemplates/Config/TelegramConfig.swift
