@@ -7,54 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000001000000000000001 /* TgTemplatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000001000000000000000 /* TgTemplatesApp.swift */; };
-		A1000002000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000000 /* ContentView.swift */; };
-		A1000003000000000000001 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000003000000000000000 /* Template.swift */; };
-		A1000004000000000000001 /* TelegramGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004000000000000000 /* TelegramGroup.swift */; };
-		A1000005000000000000001 /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000005000000000000000 /* TelegramService.swift */; };
-		A1000006000000000000001 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000006000000000000000 /* LocationService.swift */; };
-		A1000007000000000000001 /* TelegramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000007000000000000000 /* TelegramConfig.swift */; };
-		A1000008000000000000001 /* UserDefaults+AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008000000000000000 /* UserDefaults+AppGroup.swift */; };
-		A1000009000000000000001 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000009000000000000000 /* AuthView.swift */; };
-		A100000A000000000000001 /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A000000000000000 /* PhoneInputView.swift */; };
-		A100000B000000000000001 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B000000000000000 /* CodeInputView.swift */; };
-		A100000C000000000000001 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C000000000000000 /* PasswordInputView.swift */; };
-		A100000D000000000000001 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D000000000000000 /* ErrorView.swift */; };
-		A100000E000000000000001 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E000000000000000 /* TemplateListView.swift */; };
-		A100000F000000000000001 /* TemplateEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F000000000000000 /* TemplateEditView.swift */; };
-		A1000010000000000000001 /* TemplateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000010000000000000000 /* TemplateButtonView.swift */; };
-		A1000011000000000000001 /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000011000000000000000 /* IconPickerView.swift */; };
-		A1000012000000000000001 /* GroupPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000012000000000000000 /* GroupPickerView.swift */; };
-		A1000013000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000013000000000000000 /* SettingsView.swift */; };
-		A1000014000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000014000000000000000 /* Assets.xcassets */; };
-		A2000001000000000000001 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000 /* WidgetKit.framework */; };
-		A2000002000000000000001 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000002000000000000000 /* SwiftUI.framework */; };
-		A2000003000000000000001 /* TgTemplatesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003000000000000000 /* TgTemplatesWidget.swift */; };
-		A2000004000000000000001 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004000000000000000 /* WidgetTemplate.swift */; };
-		A2000005000000000000001 /* SendTemplateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005000000000000000 /* SendTemplateIntent.swift */; };
-		A2000006000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000006000000000000000 /* Assets.xcassets */; };
-		A2000007000000000000001 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A3000001000000000000001 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3000001000000000000000 /* TDLibKit */; };
+		A10000010000000000000010 /* TgTemplatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000010000000000000000 /* TgTemplatesApp.swift */; };
+		A10000020000000000000010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000000 /* ContentView.swift */; };
+		A10000030000000000000010 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000030000000000000000 /* Template.swift */; };
+		A10000040000000000000010 /* TelegramGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000040000000000000000 /* TelegramGroup.swift */; };
+		A10000050000000000000010 /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000050000000000000000 /* TelegramService.swift */; };
+		A10000060000000000000010 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000060000000000000000 /* LocationService.swift */; };
+		A10000070000000000000010 /* TelegramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000070000000000000000 /* TelegramConfig.swift */; };
+		A10000080000000000000010 /* UserDefaults+AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000080000000000000000 /* UserDefaults+AppGroup.swift */; };
+		A10000090000000000000010 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000090000000000000000 /* AuthView.swift */; };
+		A100000A0000000000000010 /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A0000000000000000 /* PhoneInputView.swift */; };
+		A100000B0000000000000010 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B0000000000000000 /* CodeInputView.swift */; };
+		A100000C0000000000000010 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C0000000000000000 /* PasswordInputView.swift */; };
+		A100000D0000000000000010 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D0000000000000000 /* ErrorView.swift */; };
+		A100000E0000000000000010 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E0000000000000000 /* TemplateListView.swift */; };
+		A100000F0000000000000010 /* TemplateEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F0000000000000000 /* TemplateEditView.swift */; };
+		A10000100000000000000010 /* TemplateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000100000000000000000 /* TemplateButtonView.swift */; };
+		A10000110000000000000010 /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000110000000000000000 /* IconPickerView.swift */; };
+		A10000120000000000000010 /* GroupPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000120000000000000000 /* GroupPickerView.swift */; };
+		A10000130000000000000010 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000130000000000000000 /* SettingsView.swift */; };
+		A10000140000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000140000000000000000 /* Assets.xcassets */; };
+		A20000010000000000000010 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000010000000000000000 /* WidgetKit.framework */; };
+		A20000020000000000000010 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000020000000000000000 /* SwiftUI.framework */; };
+		A20000030000000000000010 /* TgTemplatesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000000 /* TgTemplatesWidget.swift */; };
+		A20000040000000000000010 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000040000000000000000 /* WidgetTemplate.swift */; };
+		A20000050000000000000010 /* SendTemplateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000050000000000000000 /* SendTemplateIntent.swift */; };
+		A20000060000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000060000000000000000 /* Assets.xcassets */; };
+		A20000070000000000000010 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A30000010000000000000010 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = A30000010000000000000000 /* TDLibKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2000008000000000000000 /* PBXContainerItemProxy */ = {
+		A20000080000000000000000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0000000000000000000000 /* Project object */;
+			containerPortal = A00000000000000000000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A200000F000000000000000;
+			remoteGlobalIDString = A200000F0000000000000000;
 			remoteInfo = TgTemplatesWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A200000A000000000000000 /* Embed Foundation Extensions */ = {
+		A200000A0000000000000000 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A2000007000000000000001 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */,
+				A20000070000000000000010 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,207 +62,207 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A1000001000000000000000 /* TgTemplatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesApp.swift; sourceTree = "<group>"; };
-		A1000002000000000000000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A1000003000000000000000 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
-		A1000004000000000000000 /* TelegramGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramGroup.swift; sourceTree = "<group>"; };
-		A1000005000000000000000 /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
-		A1000006000000000000000 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		A1000007000000000000000 /* TelegramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramConfig.swift; sourceTree = "<group>"; };
-		A1000008000000000000000 /* UserDefaults+AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppGroup.swift"; sourceTree = "<group>"; };
-		A1000009000000000000000 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		A100000A000000000000000 /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
-		A100000B000000000000000 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
-		A100000C000000000000000 /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
-		A100000D000000000000000 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		A100000E000000000000000 /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
-		A100000F000000000000000 /* TemplateEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEditView.swift; sourceTree = "<group>"; };
-		A1000010000000000000000 /* TemplateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButtonView.swift; sourceTree = "<group>"; };
-		A1000011000000000000000 /* IconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerView.swift; sourceTree = "<group>"; };
-		A1000012000000000000000 /* GroupPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPickerView.swift; sourceTree = "<group>"; };
-		A1000013000000000000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		A1000014000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1000015000000000000000 /* TgTemplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TgTemplates.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1000016000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1000017000000000000000 /* TgTemplates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplates.entitlements; sourceTree = "<group>"; };
-		A2000001000000000000000 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		A2000002000000000000000 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		A2000003000000000000000 /* TgTemplatesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesWidget.swift; sourceTree = "<group>"; };
-		A2000004000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
-		A2000005000000000000000 /* SendTemplateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTemplateIntent.swift; sourceTree = "<group>"; };
-		A2000006000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TgTemplatesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2000011000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2000012000000000000000 /* TgTemplatesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplatesWidgetExtension.entitlements; sourceTree = "<group>"; };
+		A10000010000000000000000 /* TgTemplatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesApp.swift; sourceTree = "<group>"; };
+		A10000020000000000000000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000030000000000000000 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		A10000040000000000000000 /* TelegramGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramGroup.swift; sourceTree = "<group>"; };
+		A10000050000000000000000 /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
+		A10000060000000000000000 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A10000070000000000000000 /* TelegramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramConfig.swift; sourceTree = "<group>"; };
+		A10000080000000000000000 /* UserDefaults+AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppGroup.swift"; sourceTree = "<group>"; };
+		A10000090000000000000000 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A100000A0000000000000000 /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
+		A100000B0000000000000000 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
+		A100000C0000000000000000 /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
+		A100000D0000000000000000 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A100000E0000000000000000 /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
+		A100000F0000000000000000 /* TemplateEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEditView.swift; sourceTree = "<group>"; };
+		A10000100000000000000000 /* TemplateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButtonView.swift; sourceTree = "<group>"; };
+		A10000110000000000000000 /* IconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerView.swift; sourceTree = "<group>"; };
+		A10000120000000000000000 /* GroupPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPickerView.swift; sourceTree = "<group>"; };
+		A10000130000000000000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A10000140000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000150000000000000000 /* TgTemplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TgTemplates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000160000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000170000000000000000 /* TgTemplates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplates.entitlements; sourceTree = "<group>"; };
+		A20000010000000000000000 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A20000020000000000000000 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A20000030000000000000000 /* TgTemplatesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesWidget.swift; sourceTree = "<group>"; };
+		A20000040000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
+		A20000050000000000000000 /* SendTemplateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTemplateIntent.swift; sourceTree = "<group>"; };
+		A20000060000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TgTemplatesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000110000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000120000000000000000 /* TgTemplatesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplatesWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A1000020000000000000000 /* Frameworks */ = {
+		A10000200000000000000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3000001000000000000001 /* TDLibKit in Frameworks */,
+				A30000010000000000000010 /* TDLibKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A200000B000000000000000 /* Frameworks */ = {
+		A200000B0000000000000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2000002000000000000001 /* SwiftUI.framework in Frameworks */,
-				A2000001000000000000001 /* WidgetKit.framework in Frameworks */,
+				A20000020000000000000010 /* SwiftUI.framework in Frameworks */,
+				A20000010000000000000010 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0000001000000000000000 = {
+		A00000010000000000000000 = {
 			isa = PBXGroup;
 			children = (
-				A1000030000000000000000 /* TgTemplates */,
-				A2000020000000000000000 /* TgTemplatesWidget */,
-				A0000002000000000000000 /* Frameworks */,
-				A0000003000000000000000 /* Products */,
+				A10000300000000000000000 /* TgTemplates */,
+				A20000200000000000000000 /* TgTemplatesWidget */,
+				A00000020000000000000000 /* Frameworks */,
+				A00000030000000000000000 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A0000002000000000000000 /* Frameworks */ = {
+		A00000020000000000000000 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000000000000000 /* WidgetKit.framework */,
-				A2000002000000000000000 /* SwiftUI.framework */,
+				A20000010000000000000000 /* WidgetKit.framework */,
+				A20000020000000000000000 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A0000003000000000000000 /* Products */ = {
+		A00000030000000000000000 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1000015000000000000000 /* TgTemplates.app */,
-				A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */,
+				A10000150000000000000000 /* TgTemplates.app */,
+				A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1000030000000000000000 /* TgTemplates */ = {
+		A10000300000000000000000 /* TgTemplates */ = {
 			isa = PBXGroup;
 			children = (
-				A1000001000000000000000 /* TgTemplatesApp.swift */,
-				A1000031000000000000000 /* Config */,
-				A1000032000000000000000 /* Models */,
-				A1000033000000000000000 /* Services */,
-				A1000034000000000000000 /* Views */,
-				A1000035000000000000000 /* Extensions */,
-				A1000036000000000000000 /* Resources */,
-				A1000016000000000000000 /* Info.plist */,
-				A1000017000000000000000 /* TgTemplates.entitlements */,
+				A10000010000000000000000 /* TgTemplatesApp.swift */,
+				A10000310000000000000000 /* Config */,
+				A10000320000000000000000 /* Models */,
+				A10000330000000000000000 /* Services */,
+				A10000340000000000000000 /* Views */,
+				A10000350000000000000000 /* Extensions */,
+				A10000360000000000000000 /* Resources */,
+				A10000160000000000000000 /* Info.plist */,
+				A10000170000000000000000 /* TgTemplates.entitlements */,
 			);
 			path = TgTemplates;
 			sourceTree = "<group>";
 		};
-		A1000031000000000000000 /* Config */ = {
+		A10000310000000000000000 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				A1000007000000000000000 /* TelegramConfig.swift */,
+				A10000070000000000000000 /* TelegramConfig.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		A1000032000000000000000 /* Models */ = {
+		A10000320000000000000000 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A1000003000000000000000 /* Template.swift */,
-				A1000004000000000000000 /* TelegramGroup.swift */,
+				A10000030000000000000000 /* Template.swift */,
+				A10000040000000000000000 /* TelegramGroup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A1000033000000000000000 /* Services */ = {
+		A10000330000000000000000 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A1000005000000000000000 /* TelegramService.swift */,
-				A1000006000000000000000 /* LocationService.swift */,
+				A10000050000000000000000 /* TelegramService.swift */,
+				A10000060000000000000000 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A1000034000000000000000 /* Views */ = {
+		A10000340000000000000000 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A1000002000000000000000 /* ContentView.swift */,
-				A1000037000000000000000 /* Auth */,
-				A1000038000000000000000 /* Templates */,
-				A1000039000000000000000 /* Groups */,
-				A100003A000000000000000 /* Settings */,
+				A10000020000000000000000 /* ContentView.swift */,
+				A10000370000000000000000 /* Auth */,
+				A10000380000000000000000 /* Templates */,
+				A10000390000000000000000 /* Groups */,
+				A100003A0000000000000000 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A1000035000000000000000 /* Extensions */ = {
+		A10000350000000000000000 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A1000008000000000000000 /* UserDefaults+AppGroup.swift */,
+				A10000080000000000000000 /* UserDefaults+AppGroup.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A1000036000000000000000 /* Resources */ = {
+		A10000360000000000000000 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A1000014000000000000000 /* Assets.xcassets */,
+				A10000140000000000000000 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		A1000037000000000000000 /* Auth */ = {
+		A10000370000000000000000 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				A1000009000000000000000 /* AuthView.swift */,
-				A100000A000000000000000 /* PhoneInputView.swift */,
-				A100000B000000000000000 /* CodeInputView.swift */,
-				A100000C000000000000000 /* PasswordInputView.swift */,
-				A100000D000000000000000 /* ErrorView.swift */,
+				A10000090000000000000000 /* AuthView.swift */,
+				A100000A0000000000000000 /* PhoneInputView.swift */,
+				A100000B0000000000000000 /* CodeInputView.swift */,
+				A100000C0000000000000000 /* PasswordInputView.swift */,
+				A100000D0000000000000000 /* ErrorView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		A1000038000000000000000 /* Templates */ = {
+		A10000380000000000000000 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				A100000E000000000000000 /* TemplateListView.swift */,
-				A100000F000000000000000 /* TemplateEditView.swift */,
-				A1000010000000000000000 /* TemplateButtonView.swift */,
-				A1000011000000000000000 /* IconPickerView.swift */,
+				A100000E0000000000000000 /* TemplateListView.swift */,
+				A100000F0000000000000000 /* TemplateEditView.swift */,
+				A10000100000000000000000 /* TemplateButtonView.swift */,
+				A10000110000000000000000 /* IconPickerView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
 		};
-		A1000039000000000000000 /* Groups */ = {
+		A10000390000000000000000 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
-				A1000012000000000000000 /* GroupPickerView.swift */,
+				A10000120000000000000000 /* GroupPickerView.swift */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
 		};
-		A100003A000000000000000 /* Settings */ = {
+		A100003A0000000000000000 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				A1000013000000000000000 /* SettingsView.swift */,
+				A10000130000000000000000 /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		A2000020000000000000000 /* TgTemplatesWidget */ = {
+		A20000200000000000000000 /* TgTemplatesWidget */ = {
 			isa = PBXGroup;
 			children = (
-				A2000003000000000000000 /* TgTemplatesWidget.swift */,
-				A2000004000000000000000 /* WidgetTemplate.swift */,
-				A2000005000000000000000 /* SendTemplateIntent.swift */,
-				A2000006000000000000000 /* Assets.xcassets */,
-				A2000011000000000000000 /* Info.plist */,
-				A2000012000000000000000 /* TgTemplatesWidgetExtension.entitlements */,
+				A20000030000000000000000 /* TgTemplatesWidget.swift */,
+				A20000040000000000000000 /* WidgetTemplate.swift */,
+				A20000050000000000000000 /* SendTemplateIntent.swift */,
+				A20000060000000000000000 /* Assets.xcassets */,
+				A20000110000000000000000 /* Info.plist */,
+				A20000120000000000000000 /* TgTemplatesWidgetExtension.entitlements */,
 			);
 			path = TgTemplatesWidget;
 			sourceTree = "<group>";
@@ -270,35 +270,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1000040000000000000000 /* TgTemplates */ = {
+		A10000400000000000000000 /* TgTemplates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1000050000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplates" */;
+			buildConfigurationList = A10000500000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplates" */;
 			buildPhases = (
-				A1000041000000000000000 /* Sources */,
-				A1000020000000000000000 /* Frameworks */,
-				A1000042000000000000000 /* Resources */,
-				A200000A000000000000000 /* Embed Foundation Extensions */,
+				A10000410000000000000000 /* Sources */,
+				A10000200000000000000000 /* Frameworks */,
+				A10000420000000000000000 /* Resources */,
+				A200000A0000000000000000 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2000009000000000000000 /* PBXTargetDependency */,
+				A20000090000000000000000 /* PBXTargetDependency */,
 			);
 			name = TgTemplates;
 			packageProductDependencies = (
-				A3000001000000000000000 /* TDLibKit */,
+				A30000010000000000000000 /* TDLibKit */,
 			);
 			productName = TgTemplates;
-			productReference = A1000015000000000000000 /* TgTemplates.app */;
+			productReference = A10000150000000000000000 /* TgTemplates.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A200000F000000000000000 /* TgTemplatesWidgetExtension */ = {
+		A200000F0000000000000000 /* TgTemplatesWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2000030000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWidgetExtension" */;
+			buildConfigurationList = A20000300000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWidgetExtension" */;
 			buildPhases = (
-				A200000C000000000000000 /* Sources */,
-				A200000B000000000000000 /* Frameworks */,
-				A200000D000000000000000 /* Resources */,
+				A200000C0000000000000000 /* Sources */,
+				A200000B0000000000000000 /* Frameworks */,
+				A200000D0000000000000000 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -306,28 +306,28 @@
 			);
 			name = TgTemplatesWidgetExtension;
 			productName = TgTemplatesWidgetExtension;
-			productReference = A2000010000000000000000 /* TgTemplatesWidgetExtension.appex */;
+			productReference = A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A0000000000000000000000 /* Project object */ = {
+		A00000000000000000000000 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					A1000040000000000000000 = {
+					A10000400000000000000000 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					A200000F000000000000000 = {
+					A200000F0000000000000000 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = A0000010000000000000000 /* Build configuration list for PBXProject "TgTemplates" */;
+			buildConfigurationList = A00000100000000000000000 /* Build configuration list for PBXProject "TgTemplates" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -335,88 +335,88 @@
 				en,
 				Base,
 			);
-			mainGroup = A0000001000000000000000;
+			mainGroup = A00000010000000000000000;
 			packageReferences = (
-				A3000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */,
+				A30000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */,
 			);
-			productRefGroup = A0000003000000000000000 /* Products */;
+			productRefGroup = A00000030000000000000000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1000040000000000000000 /* TgTemplates */,
-				A200000F000000000000000 /* TgTemplatesWidgetExtension */,
+				A10000400000000000000000 /* TgTemplates */,
+				A200000F0000000000000000 /* TgTemplatesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A1000042000000000000000 /* Resources */ = {
+		A10000420000000000000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000014000000000000001 /* Assets.xcassets in Resources */,
+				A10000140000000000000010 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A200000D000000000000000 /* Resources */ = {
+		A200000D0000000000000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2000006000000000000001 /* Assets.xcassets in Resources */,
+				A20000060000000000000010 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A1000041000000000000000 /* Sources */ = {
+		A10000410000000000000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000001000000000000001 /* TgTemplatesApp.swift in Sources */,
-				A1000002000000000000001 /* ContentView.swift in Sources */,
-				A1000003000000000000001 /* Template.swift in Sources */,
-				A1000004000000000000001 /* TelegramGroup.swift in Sources */,
-				A1000005000000000000001 /* TelegramService.swift in Sources */,
-				A1000006000000000000001 /* LocationService.swift in Sources */,
-				A1000007000000000000001 /* TelegramConfig.swift in Sources */,
-				A1000008000000000000001 /* UserDefaults+AppGroup.swift in Sources */,
-				A1000009000000000000001 /* AuthView.swift in Sources */,
-				A100000A000000000000001 /* PhoneInputView.swift in Sources */,
-				A100000B000000000000001 /* CodeInputView.swift in Sources */,
-				A100000C000000000000001 /* PasswordInputView.swift in Sources */,
-				A100000D000000000000001 /* ErrorView.swift in Sources */,
-				A100000E000000000000001 /* TemplateListView.swift in Sources */,
-				A100000F000000000000001 /* TemplateEditView.swift in Sources */,
-				A1000010000000000000001 /* TemplateButtonView.swift in Sources */,
-				A1000011000000000000001 /* IconPickerView.swift in Sources */,
-				A1000012000000000000001 /* GroupPickerView.swift in Sources */,
-				A1000013000000000000001 /* SettingsView.swift in Sources */,
+				A10000010000000000000010 /* TgTemplatesApp.swift in Sources */,
+				A10000020000000000000010 /* ContentView.swift in Sources */,
+				A10000030000000000000010 /* Template.swift in Sources */,
+				A10000040000000000000010 /* TelegramGroup.swift in Sources */,
+				A10000050000000000000010 /* TelegramService.swift in Sources */,
+				A10000060000000000000010 /* LocationService.swift in Sources */,
+				A10000070000000000000010 /* TelegramConfig.swift in Sources */,
+				A10000080000000000000010 /* UserDefaults+AppGroup.swift in Sources */,
+				A10000090000000000000010 /* AuthView.swift in Sources */,
+				A100000A0000000000000010 /* PhoneInputView.swift in Sources */,
+				A100000B0000000000000010 /* CodeInputView.swift in Sources */,
+				A100000C0000000000000010 /* PasswordInputView.swift in Sources */,
+				A100000D0000000000000010 /* ErrorView.swift in Sources */,
+				A100000E0000000000000010 /* TemplateListView.swift in Sources */,
+				A100000F0000000000000010 /* TemplateEditView.swift in Sources */,
+				A10000100000000000000010 /* TemplateButtonView.swift in Sources */,
+				A10000110000000000000010 /* IconPickerView.swift in Sources */,
+				A10000120000000000000010 /* GroupPickerView.swift in Sources */,
+				A10000130000000000000010 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A200000C000000000000000 /* Sources */ = {
+		A200000C0000000000000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2000003000000000000001 /* TgTemplatesWidget.swift in Sources */,
-				A2000004000000000000001 /* WidgetTemplate.swift in Sources */,
-				A2000005000000000000001 /* SendTemplateIntent.swift in Sources */,
+				A20000030000000000000010 /* TgTemplatesWidget.swift in Sources */,
+				A20000040000000000000010 /* WidgetTemplate.swift in Sources */,
+				A20000050000000000000010 /* SendTemplateIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2000009000000000000000 /* PBXTargetDependency */ = {
+		A20000090000000000000000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A200000F000000000000000 /* TgTemplatesWidgetExtension */;
-			targetProxy = A2000008000000000000000 /* PBXContainerItemProxy */;
+			target = A200000F0000000000000000 /* TgTemplatesWidgetExtension */;
+			targetProxy = A20000080000000000000000 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A0000011000000000000000 /* Debug */ = {
+		A00000110000000000000000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -479,7 +479,7 @@
 			};
 			name = Debug;
 		};
-		A0000012000000000000000 /* Release */ = {
+		A00000120000000000000000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -535,7 +535,7 @@
 			};
 			name = Release;
 		};
-		A1000051000000000000000 /* Debug */ = {
+		A10000510000000000000000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -568,7 +568,7 @@
 			};
 			name = Debug;
 		};
-		A1000052000000000000000 /* Release */ = {
+		A10000520000000000000000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -601,7 +601,7 @@
 			};
 			name = Release;
 		};
-		A2000031000000000000000 /* Debug */ = {
+		A20000310000000000000000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -629,7 +629,7 @@
 			};
 			name = Debug;
 		};
-		A2000032000000000000000 /* Release */ = {
+		A20000320000000000000000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -660,29 +660,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0000010000000000000000 /* Build configuration list for PBXProject "TgTemplates" */ = {
+		A00000100000000000000000 /* Build configuration list for PBXProject "TgTemplates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0000011000000000000000 /* Debug */,
-				A0000012000000000000000 /* Release */,
+				A00000110000000000000000 /* Debug */,
+				A00000120000000000000000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1000050000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplates" */ = {
+		A10000500000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1000051000000000000000 /* Debug */,
-				A1000052000000000000000 /* Release */,
+				A10000510000000000000000 /* Debug */,
+				A10000520000000000000000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2000030000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWidgetExtension" */ = {
+		A20000300000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2000031000000000000000 /* Debug */,
-				A2000032000000000000000 /* Release */,
+				A20000310000000000000000 /* Debug */,
+				A20000320000000000000000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -690,7 +690,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A3000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
+		A30000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swiftgram/TDLibKit";
 			requirement = {
@@ -701,12 +701,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductReference section */
-		A3000001000000000000000 /* TDLibKit */ = {
+		A30000010000000000000000 /* TDLibKit */ = {
 			isa = XCSwiftPackageProductReference;
-			package = A3000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			package = A30000000000000000000000 /* XCRemoteSwiftPackageReference "TDLibKit" */;
 			productName = TDLibKit;
 		};
 /* End XCSwiftPackageProductReference section */
 	};
-	rootObject = A0000000000000000000000 /* Project object */;
+	rootObject = A00000000000000000000000 /* Project object */;
 }
