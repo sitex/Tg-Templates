@@ -5,6 +5,8 @@ struct SettingsView: View {
     @ObservedObject var location = LocationService.shared
 
     @State private var showingLogoutConfirm = false
+    @State private var apiIdText = ""
+    @State private var apiHash = ""
 
     var body: some View {
         Form {
@@ -44,8 +46,26 @@ struct SettingsView: View {
                         .foregroundColor(.secondary)
                 }
             }
+
+            Section {
+                TextField("API ID", text: $apiIdText)
+                    .keyboardType(.numberPad)
+                SecureField("API Hash", text: $apiHash)
+
+                Button("Save API Credentials") {
+                    saveApiCredentials()
+                }
+                .disabled(apiIdText.isEmpty || apiHash.isEmpty)
+            } header: {
+                Text("Telegram API")
+            } footer: {
+                Text("Get credentials at my.telegram.org")
+            }
         }
         .navigationTitle("Settings")
+        .onAppear {
+            loadApiCredentials()
+        }
         .confirmationDialog(
             "Log Out",
             isPresented: $showingLogoutConfirm,
@@ -82,6 +102,19 @@ struct SettingsView: View {
             return .red
         default:
             return .secondary
+        }
+    }
+
+    private func loadApiCredentials() {
+        let apiId = TelegramConfig.apiId
+        apiIdText = apiId != 0 ? String(apiId) : ""
+        apiHash = TelegramConfig.apiHash
+    }
+
+    private func saveApiCredentials() {
+        if let apiId = Int32(apiIdText) {
+            TelegramConfig.apiId = apiId
+            TelegramConfig.apiHash = apiHash
         }
     }
 }

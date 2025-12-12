@@ -18,9 +18,6 @@ DerivedData/
 .build/
 .swiftpm/
 
-# Secrets - IMPORTANT: Contains API credentials
-TgTemplates/Config/TelegramConfig.swift
-
 # macOS
 .DS_Store
 .AppleDouble
