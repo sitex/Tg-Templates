@@ -16,6 +16,7 @@ struct TemplateEditView: View {
 
     @State private var showingIconPicker = false
     @State private var showingGroupPicker = false
+    @State private var showingDeleteConfirm = false
 
     private var isEditing: Bool { template != nil }
 
@@ -62,7 +63,7 @@ struct TemplateEditView: View {
                 if isEditing {
                     Section {
                         Button("Delete Template", role: .destructive) {
-                            deleteTemplate()
+                            showingDeleteConfirm = true
                         }
                     }
                 }
@@ -87,6 +88,18 @@ struct TemplateEditView: View {
                     selectedGroupName: $targetGroupName
                 )
             }
+            .confirmationDialog(
+                "Delete Template",
+                isPresented: $showingDeleteConfirm,
+                titleVisibility: .visible
+            ) {
+                Button("Delete", role: .destructive) {
+                    deleteTemplate()
+                }
+            } message: {
+                Text("Are you sure you want to delete this template?")
+            }
+            .sensoryFeedback(.warning, trigger: showingDeleteConfirm)
             .onAppear {
                 if let template = template {
                     name = template.name
