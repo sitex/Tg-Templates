@@ -21,6 +21,7 @@
 		A100000B0000000000000010 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B0000000000000000 /* CodeInputView.swift */; };
 		A100000C0000000000000010 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C0000000000000000 /* PasswordInputView.swift */; };
 		A100000D0000000000000010 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D0000000000000000 /* ErrorView.swift */; };
+		A100001A0000000000000010 /* ApiConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A0000000000000000 /* ApiConfigView.swift */; };
 		A100000E0000000000000010 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E0000000000000000 /* TemplateListView.swift */; };
 		A100000F0000000000000010 /* TemplateEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F0000000000000000 /* TemplateEditView.swift */; };
 		A10000100000000000000010 /* TemplateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000100000000000000000 /* TemplateButtonView.swift */; };
@@ -104,6 +105,7 @@
 		A100000B0000000000000000 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		A100000C0000000000000000 /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
 		A100000D0000000000000000 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A100001A0000000000000000 /* ApiConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfigView.swift; sourceTree = "<group>"; };
 		A100000E0000000000000000 /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
 		A100000F0000000000000000 /* TemplateEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEditView.swift; sourceTree = "<group>"; };
 		A10000100000000000000000 /* TemplateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButtonView.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		A10000370000000000000000 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				A100001A0000000000000000 /* ApiConfigView.swift */,
 				A10000090000000000000000 /* AuthView.swift */,
 				A100000A0000000000000000 /* PhoneInputView.swift */,
 				A100000B0000000000000000 /* CodeInputView.swift */,
@@ -483,6 +486,7 @@
 				A100000B0000000000000010 /* CodeInputView.swift in Sources */,
 				A100000C0000000000000010 /* PasswordInputView.swift in Sources */,
 				A100000D0000000000000010 /* ErrorView.swift in Sources */,
+				A100001A0000000000000010 /* ApiConfigView.swift in Sources */,
 				A100000E0000000000000010 /* TemplateListView.swift in Sources */,
 				A100000F0000000000000010 /* TemplateEditView.swift in Sources */,
 				A10000100000000000000010 /* TemplateButtonView.swift in Sources */,

@@ -6,10 +6,13 @@ import WidgetKit
 struct TgTemplatesApp: App {
     @StateObject private var telegram = TelegramService.shared
     @Environment(\.scenePhase) private var scenePhase
+    @State private var isConfigured = TelegramConfig.isConfigured
 
     var body: some Scene {
         WindowGroup {
-            if telegram.isReady {
+            if !isConfigured {
+                ApiConfigView(isConfigured: $isConfigured)
+            } else if telegram.isReady {
                 ContentView()
                     .onOpenURL { url in
                         handleDeepLink(url)
@@ -27,10 +30,17 @@ struct TgTemplatesApp: App {
                 checkPendingTemplate()
             }
         }
+        .onChange(of: isConfigured) { _, configured in
+            if configured {
+                TelegramService.shared.start()
+            }
+        }
     }
 
     init() {
-        TelegramService.shared.start()
+        if TelegramConfig.isConfigured {
+            TelegramService.shared.start()
+        }
     }
 
     private func checkPendingTemplate() {
