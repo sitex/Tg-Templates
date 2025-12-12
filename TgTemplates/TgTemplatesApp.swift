@@ -38,6 +38,9 @@ struct TgTemplatesApp: App {
     }
 
     init() {
+        // Initialize WatchConnectivity early
+        _ = WatchConnectivityManager.shared
+
         if TelegramConfig.isConfigured {
             TelegramService.shared.start()
         }
