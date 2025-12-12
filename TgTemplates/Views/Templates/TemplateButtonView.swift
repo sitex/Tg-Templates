@@ -2,7 +2,9 @@ import SwiftUI
 
 struct TemplateButtonView: View {
     let template: Template
-    let onLongPress: () -> Void
+    let onEdit: () -> Void
+    let onDelete: () -> Void
+    let onDuplicate: () -> Void
 
     @ObservedObject var telegram = TelegramService.shared
     @State private var isSending = false
@@ -41,8 +43,26 @@ struct TemplateButtonView: View {
             .frame(width: 100, height: 100)
         }
         .buttonStyle(.plain)
-        .onLongPressGesture {
-            onLongPress()
+        .contextMenu {
+            Button {
+                onEdit()
+            } label: {
+                Label("Edit", systemImage: "pencil")
+            }
+
+            Button {
+                onDuplicate()
+            } label: {
+                Label("Duplicate", systemImage: "doc.on.doc")
+            }
+
+            Divider()
+
+            Button(role: .destructive) {
+                onDelete()
+            } label: {
+                Label("Delete", systemImage: "trash")
+            }
         }
         .sensoryFeedback(.success, trigger: showSuccess)
         .alert("Error", isPresented: $showError) {
