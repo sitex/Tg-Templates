@@ -540,7 +540,7 @@
 				CODE_SIGN_ENTITLEMENTS = TgTemplates/TgTemplates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RN7338LJV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TgTemplates/Info.plist;
@@ -573,7 +573,7 @@
 				CODE_SIGN_ENTITLEMENTS = TgTemplates/TgTemplates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RN7338LJV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TgTemplates/Info.plist;
@@ -606,7 +606,7 @@
 				CODE_SIGN_ENTITLEMENTS = TgTemplatesWidget/TgTemplatesWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RN7338LJV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TgTemplatesWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TgTemplatesWidget;
@@ -634,7 +634,7 @@
 				CODE_SIGN_ENTITLEMENTS = TgTemplatesWidget/TgTemplatesWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RN7338LJV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TgTemplatesWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TgTemplatesWidget;
