@@ -1,60 +1,70 @@
 {
   "images" : [
     {
+      "filename" : "icon-48.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : "<=145",
       "size" : "24x24"
     },
     {
+      "filename" : "icon-55.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">145",
       "size" : "27.5x27.5"
     },
     {
+      "filename" : "icon-58.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">161",
       "size" : "29x29"
     },
     {
+      "filename" : "icon-80.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : "<=145",
       "size" : "40x40"
     },
     {
+      "filename" : "icon-88.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">145",
       "size" : "44x44"
     },
     {
+      "filename" : "icon-92.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">161",
       "size" : "46x46"
     },
     {
+      "filename" : "icon-100.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : "<=145",
       "size" : "50x50"
     },
     {
+      "filename" : "icon-102.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">145",
       "size" : "51x51"
     },
     {
+      "filename" : "icon-108.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">161",
       "size" : "54x54"
     },
     {
+      "filename" : "icon-1024.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
