@@ -36,6 +36,10 @@
 		A20000050000000000000010 /* SendTemplateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000050000000000000000 /* SendTemplateIntent.swift */; };
 		A20000060000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000060000000000000000 /* Assets.xcassets */; };
 		A20000070000000000000010 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A30000010000000000000010 /* TgTemplatesWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000010000000000000000 /* TgTemplatesWatchApp.swift */; };
+		A30000020000000000000010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000020000000000000000 /* ContentView.swift */; };
+		A30000030000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30000030000000000000000 /* Assets.xcassets */; };
+		A30000040000000000000010 /* TgTemplatesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A30000100000000000000000 /* TgTemplatesWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A200000F0000000000000000;
 			remoteInfo = TgTemplatesWidgetExtension;
+		};
+		A30000050000000000000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A300000F0000000000000000;
+			remoteInfo = TgTemplatesWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +69,17 @@
 				A20000070000000000000010 /* TgTemplatesWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000060000000000000000 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A30000040000000000000010 /* TgTemplatesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -96,6 +118,11 @@
 		A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TgTemplatesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000110000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20000120000000000000000 /* TgTemplatesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplatesWidgetExtension.entitlements; sourceTree = "<group>"; };
+		A30000010000000000000000 /* TgTemplatesWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgTemplatesWatchApp.swift; sourceTree = "<group>"; };
+		A30000020000000000000000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A30000030000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30000070000000000000000 /* TgTemplatesWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TgTemplatesWatch.entitlements; sourceTree = "<group>"; };
+		A30000100000000000000000 /* TgTemplatesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TgTemplatesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +143,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A30000080000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,6 +158,7 @@
 			children = (
 				A10000300000000000000000 /* TgTemplates */,
 				A20000200000000000000000 /* TgTemplatesWidget */,
+				A30000200000000000000000 /* TgTemplatesWatch */,
 				A00000020000000000000000 /* Frameworks */,
 				A00000030000000000000000 /* Products */,
 			);
@@ -143,6 +178,7 @@
 			children = (
 				A10000150000000000000000 /* TgTemplates.app */,
 				A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */,
+				A30000100000000000000000 /* TgTemplatesWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +306,17 @@
 			path = TgTemplatesWidget;
 			sourceTree = "<group>";
 		};
+		A30000200000000000000000 /* TgTemplatesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A30000010000000000000000 /* TgTemplatesWatchApp.swift */,
+				A30000020000000000000000 /* ContentView.swift */,
+				A30000030000000000000000 /* Assets.xcassets */,
+				A30000070000000000000000 /* TgTemplatesWatch.entitlements */,
+			);
+			path = TgTemplatesWatch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,11 +328,13 @@
 				A10000200000000000000000 /* Frameworks */,
 				A10000420000000000000000 /* Resources */,
 				A200000A0000000000000000 /* Embed Foundation Extensions */,
+				A30000060000000000000000 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A20000090000000000000000 /* PBXTargetDependency */,
+				A30000090000000000000000 /* PBXTargetDependency */,
 			);
 			name = TgTemplates;
 			productName = TgTemplates;
@@ -309,6 +358,23 @@
 			productReference = A20000100000000000000000 /* TgTemplatesWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		A300000F0000000000000000 /* TgTemplatesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30000300000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWatch" */;
+			buildPhases = (
+				A300000C0000000000000000 /* Sources */,
+				A30000080000000000000000 /* Frameworks */,
+				A300000D0000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TgTemplatesWatch;
+			productName = TgTemplatesWatch;
+			productReference = A30000100000000000000000 /* TgTemplatesWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -323,6 +389,9 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					A200000F0000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A300000F0000000000000000 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -345,6 +414,7 @@
 			targets = (
 				A10000400000000000000000 /* TgTemplates */,
 				A200000F0000000000000000 /* TgTemplatesWidgetExtension */,
+				A300000F0000000000000000 /* TgTemplatesWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -363,6 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20000060000000000000010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A300000D0000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30000030000000000000010 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +484,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A300000C0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30000010000000000000010 /* TgTemplatesWatchApp.swift in Sources */,
+				A30000020000000000000010 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -413,6 +500,11 @@
 			isa = PBXTargetDependency;
 			target = A200000F0000000000000000 /* TgTemplatesWidgetExtension */;
 			targetProxy = A20000080000000000000000 /* PBXContainerItemProxy */;
+		};
+		A30000090000000000000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A300000F0000000000000000 /* TgTemplatesWatch */;
+			targetProxy = A30000050000000000000000 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -658,6 +750,66 @@
 			};
 			name = Release;
 		};
+		A30000310000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TgTemplatesWatch/TgTemplatesWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RN7338LJV7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TgTemplates;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sitex.TgTemplates;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitex.TgTemplates.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A30000320000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TgTemplatesWatch/TgTemplatesWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RN7338LJV7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TgTemplates;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sitex.TgTemplates;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitex.TgTemplates.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -684,6 +836,15 @@
 			buildConfigurations = (
 				A20000310000000000000000 /* Debug */,
 				A20000320000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30000300000000000000000 /* Build configuration list for PBXNativeTarget "TgTemplatesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30000310000000000000000 /* Debug */,
+				A30000320000000000000000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
