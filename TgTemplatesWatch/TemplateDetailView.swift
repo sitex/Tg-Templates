@@ -1,4 +1,5 @@
 import SwiftUI
+import AppIntents
 
 struct TemplateDetailView: View {
     let template: WidgetTemplate
@@ -56,10 +57,8 @@ struct TemplateDetailView: View {
 
                 Spacer()
 
-                // Send button - will be updated to use WatchSendTemplateIntent in Phase 4
-                Button {
-                    sendTemplate()
-                } label: {
+                // Send button
+                Button(intent: WatchSendTemplateIntent(templateId: template.id)) {
                     Label("Send", systemImage: "paperplane.fill")
                         .frame(maxWidth: .infinity)
                 }
@@ -70,11 +69,6 @@ struct TemplateDetailView: View {
         }
         .navigationTitle("Details")
         .navigationBarTitleDisplayMode(.inline)
-    }
-
-    private func sendTemplate() {
-        // Placeholder - will be replaced with WatchSendTemplateIntent in Phase 4
-        UserDefaults(suiteName: "group.com.sitex.TgTemplates")?.set(template.id.uuidString, forKey: "pendingTemplateId")
     }
 }
 
