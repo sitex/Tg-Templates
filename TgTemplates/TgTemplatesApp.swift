@@ -5,6 +5,7 @@ import WidgetKit
 @main
 struct TgTemplatesApp: App {
     @StateObject private var telegram = TelegramService.shared
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
@@ -13,15 +14,41 @@ struct TgTemplatesApp: App {
                     .onOpenURL { url in
                         handleDeepLink(url)
                     }
+                    .onAppear {
+                        checkPendingTemplate()
+                    }
             } else {
                 AuthView()
             }
         }
         .modelContainer(for: [Template.self])
+        .onChange(of: scenePhase) { _, newPhase in
+            if newPhase == .active {
+                checkPendingTemplate()
+            }
+        }
     }
 
     init() {
         TelegramService.shared.start()
+    }
+
+    private func checkPendingTemplate() {
+        let defaults = UserDefaults(suiteName: "group.com.sitex.TgTemplates")
+        guard let idString = defaults?.string(forKey: "pendingTemplateId"),
+              let templateId = UUID(uuidString: idString) else {
+            return
+        }
+
+        // Clear the pending template
+        defaults?.removeObject(forKey: "pendingTemplateId")
+
+        // Post notification to send template
+        NotificationCenter.default.post(
+            name: .sendTemplate,
+            object: nil,
+            userInfo: ["templateId": templateId]
+        )
     }
 
     private func handleDeepLink(_ url: URL) {

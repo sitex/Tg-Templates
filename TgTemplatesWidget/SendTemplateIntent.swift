@@ -18,13 +18,9 @@ struct SendTemplateIntent: AppIntent {
         self.templateId = templateId.uuidString
     }
 
-    func perform() async throws -> some IntentResult & OpensIntent {
-        // The app will be opened automatically due to openAppWhenRun = true
-        // The URL scheme will be handled by the main app
-        guard let url = URL(string: "tgtemplates://send?id=\(templateId)") else {
-            return .result()
-        }
-
-        return .result(opensIntent: OpenURLIntent(url))
+    func perform() async throws -> some IntentResult {
+        // Store the template ID for the app to read when it opens
+        UserDefaults(suiteName: "group.com.sitex.TgTemplates")?.set(templateId, forKey: "pendingTemplateId")
+        return .result()
     }
 }
