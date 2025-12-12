@@ -12,6 +12,7 @@
 		A10000020000000000000010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000000 /* ContentView.swift */; };
 		A10000030000000000000010 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000030000000000000000 /* Template.swift */; };
 		A10000040000000000000010 /* TelegramGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000040000000000000000 /* TelegramGroup.swift */; };
+		A10000180000000000000010 /* WidgetTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000180000000000000000 /* WidgetTemplate.swift */; };
 		A10000050000000000000010 /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000050000000000000000 /* TelegramService.swift */; };
 		A10000060000000000000010 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000060000000000000000 /* LocationService.swift */; };
 		A10000070000000000000010 /* TelegramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000070000000000000000 /* TelegramConfig.swift */; };
@@ -66,6 +67,7 @@
 		A10000020000000000000000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A10000030000000000000000 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		A10000040000000000000000 /* TelegramGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramGroup.swift; sourceTree = "<group>"; };
+		A10000180000000000000000 /* WidgetTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTemplate.swift; sourceTree = "<group>"; };
 		A10000050000000000000000 /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
 		A10000060000000000000000 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A10000070000000000000000 /* TelegramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramConfig.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				A10000030000000000000000 /* Template.swift */,
 				A10000040000000000000000 /* TelegramGroup.swift */,
+				A10000180000000000000000 /* WidgetTemplate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				A10000020000000000000010 /* ContentView.swift in Sources */,
 				A10000030000000000000010 /* Template.swift in Sources */,
 				A10000040000000000000010 /* TelegramGroup.swift in Sources */,
+				A10000180000000000000010 /* WidgetTemplate.swift in Sources */,
 				A10000050000000000000010 /* TelegramService.swift in Sources */,
 				A10000060000000000000010 /* LocationService.swift in Sources */,
 				A10000070000000000000010 /* TelegramConfig.swift in Sources */,
