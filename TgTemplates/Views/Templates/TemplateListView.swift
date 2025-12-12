@@ -8,6 +8,7 @@ struct TemplateListView: View {
 
     @State private var showingAddTemplate = false
     @State private var templateToEdit: Template?
+    @State private var templateToDelete: Template?
 
     let columns = [
         GridItem(.adaptive(minimum: 100), spacing: 16)
@@ -28,7 +29,9 @@ struct TemplateListView: View {
                         ForEach(templates) { template in
                             TemplateButtonView(
                                 template: template,
-                                onLongPress: { templateToEdit = template }
+                                onEdit: { templateToEdit = template },
+                                onDelete: { templateToDelete = template },
+                                onDuplicate: { duplicateTemplate(template) }
                             )
                         }
                     }
@@ -58,12 +61,51 @@ struct TemplateListView: View {
             .sheet(item: $templateToEdit) { template in
                 TemplateEditView(template: template)
             }
+            .confirmationDialog(
+                "Delete Template",
+                isPresented: Binding(
+                    get: { templateToDelete != nil },
+                    set: { if !$0 { templateToDelete = nil } }
+                ),
+                titleVisibility: .visible
+            ) {
+                Button("Delete", role: .destructive) {
+                    if let template = templateToDelete {
+                        deleteTemplate(template)
+                    }
+                }
+            } message: {
+                if let template = templateToDelete {
+                    Text("Are you sure you want to delete \"\(template.name)\"?")
+                }
+            }
+            .sensoryFeedback(.warning, trigger: templateToDelete)
             .onAppear {
                 syncWidgetData()
             }
             .onChange(of: templates.count) {
                 syncWidgetData()
             }
+        }
+    }
+
+    private func deleteTemplate(_ template: Template) {
+        withAnimation {
+            modelContext.delete(template)
+        }
+    }
+
+    private func duplicateTemplate(_ template: Template) {
+        let copy = Template(
+            name: "\(template.name) (Copy)",
+            icon: template.icon,
+            messageText: template.messageText,
+            targetGroupId: template.targetGroupId,
+            targetGroupName: template.targetGroupName,
+            includeLocation: template.includeLocation
+        )
+        withAnimation {
+            modelContext.insert(copy)
         }
     }
 
