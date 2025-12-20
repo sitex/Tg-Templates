@@ -6,5 +6,7 @@
 	<array>
 		<string>group.com.sitex.TgTemplates</string>
 	</array>
+	<key>com.apple.developer.carplay-communication</key>
+	<true/>
 </dict>
 </plist>
